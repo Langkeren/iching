@@ -45,9 +45,15 @@ function start(){
     const earth = num1 % guaSize;
 
     const predict = gua[sky].bit + gua[earth].bit
+    console.log(predict)
 
     const info = guaInfo.gua.filter(e => e['gua-xiang'] === predict)[0]
+    console.log(info)
     document.getElementById("result").innerHTML = "<p>占卦结果: " + guaData[predict] + " 卦, 变爻为" + (change + 1)  + " 爻</p>"
     document.getElementById("info").innerHTML = "<p>" + getGuaName(info["gua-xiang"], info["gua-name"]) + "</p>"
+    document.getElementById("guaCi").innerHTML = "卦辞：<p>" + info['gua-detail'] + "</p>";
+
+    let yaoCi = info['yao-detail'].join("<br/>")
+    document.getElementById("yaoCi").innerHTML = "爻辞：<p>" + yaoCi + "</p>"
     document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
 }

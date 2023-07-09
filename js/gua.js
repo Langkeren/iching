@@ -25,7 +25,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "屯",
-        "gua-xiang": "100010",
+        "gua-xiang": "010001",
         "gua-detail": "元亨，利贞，勿用有攸往，利建侯。",
         "yao-detail": [
             "磐桓；利居贞，利建侯。",
@@ -37,7 +37,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "蒙",
-        "gua-xiang": "010001",
+        "gua-xiang": "100010",
         "gua-detail": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。",
         "yao-detail": [
             "发蒙，利用刑人，用说桎梏，以往吝。",
@@ -49,7 +49,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "需",
-        "gua-xiang": "111010",
+        "gua-xiang": "010111",
         "gua-detail": "有孚，光亨，贞吉。利涉大川。",
         "yao-detail": [
             "需于郊。利用恒，无咎。",
@@ -61,7 +61,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "讼",
-        "gua-xiang": "010111",
+        "gua-xiang": "111010",
         "gua-detail": "有孚，窒。惕中吉。终凶。利见大人，不利涉大川。",
         "yao-detail": [
             "不永所事，小有言，终吉。",
@@ -73,7 +73,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "师",
-        "gua-xiang": "010000",
+        "gua-xiang": "000010",
         "gua-detail": "贞，丈人，吉无咎。",
         "yao-detail": [
             "师出以律，否臧凶。",
@@ -85,7 +85,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "比",
-        "gua-xiang": "000010",
+        "gua-xiang": "111011",
         "gua-detail": "吉。原筮元永贞，无咎。不宁方来，后夫凶。",
         "yao-detail": [
             "有孚，比之，无咎。有孚盈缶，终来有它吉。",
@@ -97,7 +97,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "小畜",
-        "gua-xiang": "111011",
+        "gua-xiang": "110111",
         "gua-detail": "亨。密云不雨，自我西郊。",
         "yao-detail": [
             "复自道，何其咎，吉。",
@@ -109,7 +109,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "履",
-        "gua-xiang": "110111",
+        "gua-xiang": "111000",
         "gua-detail": "履虎尾，不咥人，亨。",
         "yao-detail": [
             "素履，往无咎。",
@@ -121,7 +121,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "泰",
-        "gua-xiang": "111000",
+        "gua-xiang": "000111",
         "gua-detail": "小往大来，吉亨。",
         "yao-detail": [
             "拔茅茹，以其汇，征吉。",
@@ -133,7 +133,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "否",
-        "gua-xiang": "000111",
+        "gua-xiang": "101111",
         "gua-detail": "否之匪人，不利君子贞，大往小来。",
         "yao-detail": [
             "拔茅茹，以其汇，贞吉亨。",
@@ -145,7 +145,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "同人",
-        "gua-xiang": "101111",
+        "gua-xiang": "111101",
         "gua-detail": "同人于野，亨。利涉大川，利君子贞。",
         "yao-detail": [
             "同人于门，无咎。",
@@ -157,7 +157,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大有",
-        "gua-xiang": "111101",
+        "gua-xiang": "001000",
         "gua-detail": "元亨。",
         "yao-detail": [
             "无交害，匪咎，艰则无咎。",
@@ -169,7 +169,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "谦",
-        "gua-xiang": "001000",
+        "gua-xiang": "000100",
         "gua-detail": "亨，君子有终。",
         "yao-detail": [
             "谦谦君子，用涉大川，吉。",
@@ -181,7 +181,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "豫",
-        "gua-xiang": "000100",
+        "gua-xiang": "100110",
         "gua-detail": "利建侯，行师。",
         "yao-detail": [
             "鸣豫，凶。",
@@ -193,7 +193,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "随",
-        "gua-xiang": "100110",
+        "gua-xiang": "011001",
         "gua-detail": "元亨利贞，无咎。",
         "yao-detail": [
             "官有渝，贞吉。出门交有功。",
@@ -205,7 +205,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "蛊",
-        "gua-xiang": "011001",
+        "gua-xiang": "110000",
         "gua-detail": "元亨，利涉大川。先甲三日，后甲三日。",
         "yao-detail": [
             "干父之蛊，有子，考无咎，厉终吉。",
@@ -217,7 +217,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "临",
-        "gua-xiang": "110000",
+        "gua-xiang": "000011",
         "gua-detail": "元，亨，利，贞。至于八月有凶。",
         "yao-detail": [
             "咸临，贞吉。",
@@ -229,7 +229,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "观",
-        "gua-xiang": "000011",
+        "gua-xiang": "100101",
         "gua-detail": "盥而不荐，有孚顒若。",
         "yao-detail": [
             "童观，小人无咎，君子吝。",
@@ -241,7 +241,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "噬嗑",
-        "gua-xiang": "100101",
+        "gua-xiang": "101001",
         "gua-detail": "亨。利用狱。",
         "yao-detail": [
             "屦校灭趾，无咎。",
@@ -253,7 +253,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "贲",
-        "gua-xiang": "101001",
+        "gua-xiang": "000001",
         "gua-detail": "亨。小利有攸往。",
         "yao-detail": [
             "贲其趾，舍车而徒。",
@@ -265,7 +265,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "剥",
-        "gua-xiang": "000001",
+        "gua-xiang": "100000",
         "gua-detail": "不利有攸往。",
         "yao-detail": [
             "剥床以足，蔑贞凶。",
@@ -277,7 +277,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "复",
-        "gua-xiang": "100000",
+        "gua-xiang": "100111",
         "gua-detail": "亨。出入无疾，朋来无咎。反复其道，七日来复，利有攸往。",
         "yao-detail": [
             "不远复，无祗悔，元吉。",
@@ -289,7 +289,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "无妄",
-        "gua-xiang": "100111",
+        "gua-xiang": "111001",
         "gua-detail": "元亨，利贞。其匪正有眚，不利有攸往。",
         "yao-detail": [
             "无妄，往吉。",
@@ -301,7 +301,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大畜",
-        "gua-xiang": "111001",
+        "gua-xiang": "100001",
         "gua-detail": "利贞，不家食吉，利涉大川。",
         "yao-detail": [
             "有厉利已。",
@@ -313,7 +313,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "颐",
-        "gua-xiang": "100001",
+        "gua-xiang": "011110",
         "gua-detail": "贞吉。观颐，自求口实。",
         "yao-detail": [
             "舍尔灵龟，观我朵颐，凶。",
@@ -325,7 +325,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大过",
-        "gua-xiang": "011110",
+        "gua-xiang": "010010",
         "gua-detail": "栋桡，利有攸往，亨。",
         "yao-detail": [
             "藉用白茅，无咎。",
@@ -337,7 +337,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "坎",
-        "gua-xiang": "010010",
+        "gua-xiang": "101101",
         "gua-detail": "习坎，有孚，维心亨，行有尚。",
         "yao-detail": [
             "习坎，入于坎窞，凶。",
@@ -349,7 +349,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "离",
-        "gua-xiang": "101101",
+        "gua-xiang": "001110",
         "gua-detail": "利贞，亨。畜牝牛，吉。",
         "yao-detail": [
             "履错然，敬之无咎。",
@@ -361,7 +361,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "咸",
-        "gua-xiang": "001110",
+        "gua-xiang": "011100",
         "gua-detail": "咸，亨，利贞，取女吉。",
         "yao-detail": [
             "咸其拇。",
@@ -373,7 +373,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "恒",
-        "gua-xiang": "011100",
+        "gua-xiang": "001111",
         "gua-detail": "亨，无咎，利贞，利有攸往。",
         "yao-detail": [
             "浚恒，贞凶，无攸利。",
@@ -385,7 +385,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "遁",
-        "gua-xiang": "001111",
+        "gua-xiang": "111100",
         "gua-detail": "亨，小利贞。",
         "yao-detail": [
             "遯尾，厉，勿用有攸往。",
@@ -397,7 +397,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大壮",
-        "gua-xiang": "111100",
+        "gua-xiang": "000101",
         "gua-detail": "利贞。",
         "yao-detail": [
             "壮于趾，征凶，有孚。",
@@ -409,7 +409,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "晋",
-        "gua-xiang": "000101",
+        "gua-xiang": "101000",
         "gua-detail": "康侯用锡马蕃庶，昼日三接。",
         "yao-detail": [
             "晋如，摧如，贞吉。罔孚，裕无咎。",
@@ -421,7 +421,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "明夷",
-        "gua-xiang": "101000",
+        "gua-xiang": "101011",
         "gua-detail": "利艰贞。",
         "yao-detail": [
             "明夷于飞，垂其翼。君子于行，三日不食，有攸往，主人有言。",
@@ -433,7 +433,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "家人",
-        "gua-xiang": "101011",
+        "gua-xiang": "110101",
         "gua-detail": "利女贞。",
         "yao-detail": [
             "闲有家，悔亡。",
@@ -445,7 +445,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "睽",
-        "gua-xiang": "110101",
+        "gua-xiang": "101011",
         "gua-detail": "小事吉。",
         "yao-detail": [
             "悔亡，丧马勿逐，自复；见恶人无咎。",
@@ -457,7 +457,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "蹇",
-        "gua-xiang": "001010",
+        "gua-xiang": "010100",
         "gua-detail": "利西南，不利东北；利见大人，贞吉。",
         "yao-detail": [
             "往蹇，来誉。",
@@ -469,7 +469,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "解",
-        "gua-xiang": "010100",
+        "gua-xiang": "001010",
         "gua-detail": "利西南，无所往，其来复吉。有攸往，夙吉。",
         "yao-detail": [
             "无咎。",
@@ -481,7 +481,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "损",
-        "gua-xiang": "110001",
+        "gua-xiang": "100011",
         "gua-detail": "损：有孚，元吉，无咎，可贞，利有攸往。曷之用，二簋可用享。",
         "yao-detail": [
             "巳事遄往，无咎，酌损之。",
@@ -493,7 +493,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "益",
-        "gua-xiang": "100011",
+        "gua-xiang": "110001",
         "gua-detail": "利有攸往，利涉大川。",
         "yao-detail": [
             "利用为大作，元吉，无咎。",
@@ -505,7 +505,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "夬",
-        "gua-xiang": "111110",
+        "gua-xiang": "011111",
         "gua-detail": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。",
         "yao-detail": [
             "壮于前趾，往不胜为咎。",
@@ -517,7 +517,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "姤",
-        "gua-xiang": "011111",
+        "gua-xiang": "000110",
         "gua-detail": "女壮，勿用取女。",
         "yao-detail": [
             "系于金柅，贞吉，有攸往，见凶，羸豕孚蹢躅。",
@@ -529,7 +529,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "萃",
-        "gua-xiang": "000110",
+        "gua-xiang": "011000",
         "gua-detail": "亨。王假有庙，利见大人，亨，利贞。用大牲吉，利有攸往。",
         "yao-detail": [
             "有孚不终，乃乱乃萃，若号一握为笑，勿恤，往无咎。",
@@ -541,7 +541,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "升",
-        "gua-xiang": "011000",
+        "gua-xiang": "000110",
         "gua-detail": "元亨，用见大人，勿恤，南征吉。",
         "yao-detail": [
             "允升，大吉。",
@@ -553,7 +553,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "困",
-        "gua-xiang": "010110",
+        "gua-xiang": "011010",
         "gua-detail": "亨，贞，大人吉，无咎，有言不信。",
         "yao-detail": [
             "臀困于株木，入于幽谷，三岁不觌。",
@@ -565,7 +565,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "井",
-        "gua-xiang": "011010",
+        "gua-xiang": "010110",
         "gua-detail": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。",
         "yao-detail": [
             "井泥不食，旧井无禽。",
@@ -577,7 +577,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "革",
-        "gua-xiang": "101110",
+        "gua-xiang": "011101",
         "gua-detail": "巳日乃孚，元亨利贞，悔亡。",
         "yao-detail": [
             "巩用黄牛之革。",
@@ -589,7 +589,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "鼎",
-        "gua-xiang": "011101",
+        "gua-xiang": "101110",
         "gua-detail": "元吉，亨。",
         "yao-detail": [
             "鼎颠趾，利出否，得妾以其子，无咎。",
@@ -601,7 +601,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "震",
-        "gua-xiang": "100100",
+        "gua-xiang": "001001",
         "gua-detail": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
         "yao-detail": [
             "震来虩虩，后笑言哑哑，吉",
@@ -613,7 +613,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "艮",
-        "gua-xiang": "001001",
+        "gua-xiang": "100100",
         "gua-detail": "艮其背，不获其身，行其庭，不见其人，无咎。",
         "yao-detail": [
             "艮其趾，无咎，利永贞。",
@@ -625,7 +625,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "渐",
-        "gua-xiang": "001011",
+        "gua-xiang": "110100",
         "gua-detail": "女归吉，利贞。",
         "yao-detail": [
             "鸿渐于干，小子厉，有言，无咎。",
@@ -637,7 +637,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "归妹",
-        "gua-xiang": "110100",
+        "gua-xiang": "001011",
         "gua-detail": "征凶，无攸利。",
         "yao-detail": [
             "归妹以娣，跛能履，征吉。",
@@ -649,7 +649,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "丰",
-        "gua-xiang": "101100",
+        "gua-xiang": "001101",
         "gua-detail": "亨，王假之，勿忧，宜日中。",
         "yao-detail": [
             "遇其配主，虽旬无咎，往有尚。",
@@ -661,7 +661,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "旅",
-        "gua-xiang": "001101",
+        "gua-xiang": "101100",
         "gua-detail": "小亨，旅贞吉。",
         "yao-detail": [
             "旅琐琐，斯其所取灾。",
@@ -673,7 +673,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "巽",
-        "gua-xiang": "011011",
+        "gua-xiang": "110110",
         "gua-detail": "小亨，利攸往，利见大人。",
         "yao-detail": [
             "进退，利武人之贞。",
@@ -685,7 +685,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "兑",
-        "gua-xiang": "110110",
+        "gua-xiang": "011011",
         "gua-detail": "亨，利贞。",
         "yao-detail": [
             "和兑，吉。",
@@ -697,7 +697,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "涣",
-        "gua-xiang": "010011",
+        "gua-xiang": "110010",
         "gua-detail": "亨。王假有庙，利涉大川，利贞。",
         "yao-detail": [
             "用拯马壮，吉。",
@@ -709,7 +709,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "节",
-        "gua-xiang": "110010",
+        "gua-xiang": "010011",
         "gua-detail": "亨。苦节，不可贞。",
         "yao-detail": [
             "不出户庭，无咎。",
@@ -745,7 +745,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "既济",
-        "gua-xiang": "101010",
+        "gua-xiang": "010101",
         "gua-detail": "亨，小利贞，初吉终乱。",
         "yao-detail": [
             "曳其轮，濡其尾，无咎。",
@@ -757,7 +757,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "未济",
-        "gua-xiang": "010101",
+        "gua-xiang": "101010",
         "gua-detail": "亨，小狐汔济，濡其尾，无攸利。",
         "yao-detail": [
             "濡其尾，吝。",
