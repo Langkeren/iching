@@ -18,11 +18,24 @@ const gua = [
     {'bit':'100','gua':'艮'}
 ]
 
+function getGuaName(guaXiang, guaName) {
+    const name = ['地', '雷', '水', '泽', '山', '火', '风', '天'];
+    const last = parseInt(guaXiang[0]) + parseInt(guaXiang[1]) * 2
+        + parseInt(guaXiang[2]) * 4;
+    const first = parseInt(guaXiang[3]) + parseInt(guaXiang[4]) * 2
+        + parseInt(guaXiang[5]) * 4;
+    if (first === last) {
+        return guaName + '为' + name[first];
+    } else {
+        return name[first] + name[last] + guaName;
+    }
+}
+
 function start(){
-    const random = Math.floor((new Date()).getTime() * Math.random());
-    const num1 = document.getElementById("num1").value * random;
-    const num2 = document.getElementById("num2").value * random;
-    const num3 = document.getElementById("num3").value * random;
+    const time = (new Date()).getTime();
+    const num1 = Math.floor(document.getElementById("num1").value * time * Math.random());
+    const num2 = Math.ceil(document.getElementById("num2").value * time * Math.random());
+    const num3 = Math.floor(document.getElementById("num3").value * time * Math.random());
 
 
     console.log(num1, num2, num3);
@@ -32,6 +45,9 @@ function start(){
     const earth = num1 % guaSize;
 
     const predict = gua[sky].bit + gua[earth].bit
+
+    const info = guaInfo.gua.filter(e => e['gua-xiang'] === predict)[0]
     document.getElementById("result").innerHTML = "<p>占卦结果: " + guaData[predict] + " 卦, 变爻为" + (change + 1)  + " 爻</p>"
+    document.getElementById("info").innerHTML = "<p>" + getGuaName(info["gua-xiang"], info["gua-name"]) + "</p>"
     document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
 }
