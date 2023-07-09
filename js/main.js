@@ -24,15 +24,12 @@ function start(){
     const num3 = document.getElementById("num3").value;
 
 
-    const change = num1 % 6;
-
+    const change = num3 % 6;
     const guaSize = gua.length;
     const sky = num2 % guaSize;
-    const earth = num3 % guaSize;
-
-    console.log(sky, earth, change)
+    const earth = num1 % guaSize;
 
     const predict = gua[sky].bit + gua[earth].bit
-    console.log(predict)
+    document.getElementById("result").innerHTML = "<p>占卦结果: " + guaData[predict] + " 卦, 变爻为" + (change + 1)  + " 爻</p>"
     document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
 }
