@@ -517,7 +517,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "姤",
-        "gua-xiang": "000110",
+        "gua-xiang": "111110",
         "gua-detail": "女壮，勿用取女。",
         "yao-detail": [
             "系于金柅，贞吉，有攸往，见凶，羸豕孚蹢躅。",
