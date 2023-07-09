@@ -8,4 +8,4 @@ const guaData = {'111111':'乾','011111':'夬','000000':'坤','010001':'屯','10
     '110110':'巽','011011':'兑','110010':'涣','010011':'节','110011':'中孚','001100':'小过','010101':'既济','101010':'未济'}
 
 
-document.getElementById("container").innerHTML = "<p>" + explainData['000000'] + "</p>"
+document.getElementById("explain").innerHTML = "<p>" + explainData['000000'] + "</p>"
