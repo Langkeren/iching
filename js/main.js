@@ -7,5 +7,32 @@ const guaData = {'111111':'乾','011111':'夬','000000':'坤','010001':'屯','10
     '011101':'革','101110':'鼎','001001':'震','100100':'艮','110100':'渐','001011':'归妹','001101':'丰','101100':'旅',
     '110110':'巽','011011':'兑','110010':'涣','010011':'节','110011':'中孚','001100':'小过','010101':'既济','101010':'未济'}
 
+const gua = [
+    {'bit':'000','gua':'坤'},
+    {'bit':'111','gua':'乾'},
+    {'bit':'011','gua':'兑'},
+    {'bit':'101','gua':'离'},
+    {'bit':'001','gua':'震'},
+    {'bit':'110','gua':'巽'},
+    {'bit':'010','gua':'坎'},
+    {'bit':'100','gua':'艮'}
+]
 
-document.getElementById("explain").innerHTML = "<p>" + explainData['000000'] + "</p>"
+function start(){
+    const num1 = document.getElementById("num1").value;
+    const num2 = document.getElementById("num2").value;
+    const num3 = document.getElementById("num3").value;
+
+
+    const change = num1 % 6;
+
+    const guaSize = gua.length;
+    const sky = num2 % guaSize;
+    const earth = num3 % guaSize;
+
+    console.log(sky, earth, change)
+
+    const predict = gua[sky].bit + gua[earth].bit
+    console.log(predict)
+    document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
+}
