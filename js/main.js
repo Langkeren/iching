@@ -19,11 +19,13 @@ const gua = [
 ]
 
 function start(){
-    const num1 = document.getElementById("num1").value;
-    const num2 = document.getElementById("num2").value;
-    const num3 = document.getElementById("num3").value;
+    const random = Math.floor((new Date()).getTime() * Math.random());
+    const num1 = document.getElementById("num1").value * random;
+    const num2 = document.getElementById("num2").value * random;
+    const num3 = document.getElementById("num3").value * random;
 
 
+    console.log(num1, num2, num3);
     const change = num3 % 6;
     const guaSize = gua.length;
     const sky = num2 % guaSize;
