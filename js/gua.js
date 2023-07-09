@@ -85,7 +85,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "比",
-        "gua-xiang": "111011",
+        "gua-xiang": "010000",
         "gua-detail": "吉。原筮元永贞，无咎。不宁方来，后夫凶。",
         "yao-detail": [
             "有孚，比之，无咎。有孚盈缶，终来有它吉。",
@@ -109,7 +109,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "履",
-        "gua-xiang": "111000",
+        "gua-xiang": "111011",
         "gua-detail": "履虎尾，不咥人，亨。",
         "yao-detail": [
             "素履，往无咎。",
@@ -133,7 +133,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "否",
-        "gua-xiang": "101111",
+        "gua-xiang": "111000",
         "gua-detail": "否之匪人，不利君子贞，大往小来。",
         "yao-detail": [
             "拔茅茹，以其汇，贞吉亨。",
@@ -157,7 +157,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大有",
-        "gua-xiang": "001000",
+        "gua-xiang": "101111",
         "gua-detail": "元亨。",
         "yao-detail": [
             "无交害，匪咎，艰则无咎。",
@@ -181,7 +181,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "豫",
-        "gua-xiang": "100110",
+        "gua-xiang": "001000",
         "gua-detail": "利建侯，行师。",
         "yao-detail": [
             "鸣豫，凶。",
@@ -205,7 +205,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "蛊",
-        "gua-xiang": "110000",
+        "gua-xiang": "100110",
         "gua-detail": "元亨，利涉大川。先甲三日，后甲三日。",
         "yao-detail": [
             "干父之蛊，有子，考无咎，厉终吉。",
@@ -229,7 +229,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "观",
-        "gua-xiang": "100101",
+        "gua-xiang": "110000",
         "gua-detail": "盥而不荐，有孚顒若。",
         "yao-detail": [
             "童观，小人无咎，君子吝。",
@@ -253,7 +253,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "贲",
-        "gua-xiang": "000001",
+        "gua-xiang": "100101",
         "gua-detail": "亨。小利有攸往。",
         "yao-detail": [
             "贲其趾，舍车而徒。",
@@ -277,7 +277,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "复",
-        "gua-xiang": "100111",
+        "gua-xiang": "000001",
         "gua-detail": "亨。出入无疾，朋来无咎。反复其道，七日来复，利有攸往。",
         "yao-detail": [
             "不远复，无祗悔，元吉。",
@@ -301,7 +301,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大畜",
-        "gua-xiang": "100001",
+        "gua-xiang": "100111",
         "gua-detail": "利贞，不家食吉，利涉大川。",
         "yao-detail": [
             "有厉利已。",
@@ -313,7 +313,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "颐",
-        "gua-xiang": "011110",
+        "gua-xiang": "100001",
         "gua-detail": "贞吉。观颐，自求口实。",
         "yao-detail": [
             "舍尔灵龟，观我朵颐，凶。",
@@ -325,7 +325,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大过",
-        "gua-xiang": "010010",
+        "gua-xiang": "011110",
         "gua-detail": "栋桡，利有攸往，亨。",
         "yao-detail": [
             "藉用白茅，无咎。",
@@ -337,7 +337,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "坎",
-        "gua-xiang": "101101",
+        "gua-xiang": "010010",
         "gua-detail": "习坎，有孚，维心亨，行有尚。",
         "yao-detail": [
             "习坎，入于坎窞，凶。",
@@ -349,7 +349,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "离",
-        "gua-xiang": "001110",
+        "gua-xiang": "101101",
         "gua-detail": "利贞，亨。畜牝牛，吉。",
         "yao-detail": [
             "履错然，敬之无咎。",
@@ -373,7 +373,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "恒",
-        "gua-xiang": "001111",
+        "gua-xiang": "001110",
         "gua-detail": "亨，无咎，利贞，利有攸往。",
         "yao-detail": [
             "浚恒，贞凶，无攸利。",
@@ -397,7 +397,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "大壮",
-        "gua-xiang": "000101",
+        "gua-xiang": "001111",
         "gua-detail": "利贞。",
         "yao-detail": [
             "壮于趾，征凶，有孚。",
@@ -421,7 +421,7 @@ const guaInfo = {
         ]
     }, {
         "gua-name": "明夷",
-        "gua-xiang": "101011",
+        "gua-xiang": "000101",
         "gua-detail": "利艰贞。",
         "yao-detail": [
             "明夷于飞，垂其翼。君子于行，三日不食，有攸往，主人有言。",
