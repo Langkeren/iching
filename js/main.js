@@ -88,8 +88,37 @@ function start(){
 
     let yaoCi = info['yao-detail'].join("<br/>")
     document.getElementById("yaoCi").innerHTML = "爻辞：<p>" + yaoCi + "</p>"
-    document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
+
+
+    const explainPretty = getExplainList(explainData[predict]).join("<br/>")
+    document.getElementById("explain").innerHTML = "<p>" + explainPretty + "</p>"
 }
 
+
+/**
+ * 源数据为一行, 需要格式化
+ * @param explains raw data
+ * @returns {*[]} pretty string
+ */
+function getExplainList(explains){
+    let tmp = ''
+    const all = []
+    for (let i = 0; i < explains.length; i++){
+        if (explains[i] === '爻' && (i+1) < explains.length && explains[i+1] === '辞'){
+            const len = tmp.length
+            const prev = tmp.substring(0, len - 2)
+            all.push(prev + "<br/>")
+            tmp = "<br/>"
+            // 忽略下一个'辞'字
+            i++;
+        }else {
+            tmp += explains[i]
+        }
+    }
+
+    all.push(tmp)
+
+    return all
+}
 
 init();
