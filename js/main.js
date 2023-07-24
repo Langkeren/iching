@@ -31,33 +31,51 @@ function getGuaName(guaXiang, guaName) {
     }
 }
 
-// 3天内有效的随机数
+// 结果3天内有效
+const EFFECT_MINUTES = 60 * 24 * 3
 const randomKey = "randomKey"
 let randomNumber = (new Date()).getTime();
 function init(){
+    // 随机数
     const cachedRandom = sessionGet(randomKey);
     if (cachedRandom != null){
         randomNumber = parseInt(cachedRandom)
     }else {
-        const time = (new Date()).getTime();
         randomNumber = Math.floor(randomNumber * Math.random());
-        sessionSet(randomKey, randomNumber, 60 * 24 * 3)
+        sessionSet(randomKey, randomNumber, EFFECT_MINUTES)
     }
 
     console.log("随机数: " + randomNumber)
 }
 
+function getIndex(arrays, ...no){
+    for (let i = 0; i < arrays.length; i++){
+        if (no.includes(i)){
+            continue
+        }
+
+        return i
+    }
+}
 function start(){
     const num1 = Math.floor(document.getElementById("num1").value * randomNumber);
     const num2 = Math.ceil(document.getElementById("num2").value * randomNumber);
     const num3 = Math.floor(document.getElementById("num3").value * randomNumber);
+    const numberArray = [num1, num2, num3];
+    const count = numberArray.length;
+    console.log(numberArray);
+    // 通过随机数决定那数字的属性
+    const changeIndex = randomNumber % count;
+    const skyIndex = getIndex(numberArray, changeIndex)
+    const earthIndex = getIndex(numberArray, changeIndex, skyIndex)
 
 
-    console.log(num1, num2, num3);
-    const change = num3 % 6;
+    console.log("变, 天, 地", changeIndex, skyIndex, earthIndex)
+
+    const change = numberArray[changeIndex] % 6;
     const guaSize = gua.length;
-    const sky = num2 % guaSize;
-    const earth = num1 % guaSize;
+    const sky = numberArray[skyIndex] % guaSize;
+    const earth = numberArray[earthIndex] % guaSize;
 
     const predict = gua[sky].bit + gua[earth].bit
     console.log(predict)
