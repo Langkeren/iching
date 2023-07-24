@@ -58,25 +58,35 @@ function getIndex(arrays, ...no){
     }
 }
 function start(){
-    const num1 = Math.floor(document.getElementById("num1").value * randomNumber);
-    const num2 = Math.ceil(document.getElementById("num2").value * randomNumber);
-    const num3 = Math.floor(document.getElementById("num3").value * randomNumber);
+    const inputNumber = [document.getElementById("num1").value, document.getElementById("num2").value, document.getElementById("num3").value]
+    console.log("用户输入", inputNumber);
+    for (let i = 0; i < inputNumber.length; i++){
+        if (!inputNumber[i]){
+            const ram = Math.random()
+            console.log("第" + (i+1) + "个数字缺失, 赋值随机数: " + ram)
+            inputNumber[i] = ram
+        }
+    }
+    const num1 = inputNumber[0] * randomNumber;
+    const num2 = inputNumber[1] * randomNumber;
+    const num3 = inputNumber[2] * randomNumber;
     const numberArray = [num1, num2, num3];
     const count = numberArray.length;
-    console.log(numberArray);
+    console.log("生成随机数", numberArray);
+
+
     // 通过随机数决定那数字的属性
     const changeIndex = randomNumber % count;
     const skyIndex = getIndex(numberArray, changeIndex)
     const earthIndex = getIndex(numberArray, changeIndex, skyIndex)
+    console.log("变, 天, 地: 索引", changeIndex, skyIndex, earthIndex)
 
-
-    console.log("变, 天, 地", changeIndex, skyIndex, earthIndex)
-
-    const change = numberArray[changeIndex] % 6;
     const guaSize = gua.length;
-    const sky = numberArray[skyIndex] % guaSize;
-    const earth = numberArray[earthIndex] % guaSize;
+    const change = Math.round(numberArray[changeIndex]) % 6;
+    const sky = Math.ceil(numberArray[skyIndex]) % guaSize;
+    const earth = Math.floor(numberArray[earthIndex]) % guaSize;
 
+    console.log("变爻, 天卦, 地卦: 位置", change, sky, earth)
     const predict = gua[sky].bit + gua[earth].bit
     console.log(predict)
 
