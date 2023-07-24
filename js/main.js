@@ -31,11 +31,26 @@ function getGuaName(guaXiang, guaName) {
     }
 }
 
+// 3天内有效的随机数
+const randomKey = "randomKey"
+let randomNumber = (new Date()).getTime();
+function init(){
+    const cachedRandom = sessionGet(randomKey);
+    if (cachedRandom != null){
+        randomNumber = parseInt(cachedRandom)
+    }else {
+        const time = (new Date()).getTime();
+        randomNumber = Math.floor(randomNumber * Math.random());
+        sessionSet(randomKey, randomNumber, 60 * 24 * 3)
+    }
+
+    console.log("随机数: " + randomNumber)
+}
+
 function start(){
-    const time = (new Date()).getTime();
-    const num1 = Math.floor(document.getElementById("num1").value * time * Math.random());
-    const num2 = Math.ceil(document.getElementById("num2").value * time * Math.random());
-    const num3 = Math.floor(document.getElementById("num3").value * time * Math.random());
+    const num1 = Math.floor(document.getElementById("num1").value * randomNumber);
+    const num2 = Math.ceil(document.getElementById("num2").value * randomNumber);
+    const num3 = Math.floor(document.getElementById("num3").value * randomNumber);
 
 
     console.log(num1, num2, num3);
@@ -57,3 +72,6 @@ function start(){
     document.getElementById("yaoCi").innerHTML = "爻辞：<p>" + yaoCi + "</p>"
     document.getElementById("explain").innerHTML = "<p>" + explainData[predict] + "</p>"
 }
+
+
+init();
