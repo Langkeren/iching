@@ -122,6 +122,7 @@ function showGua(predict, change){
         console.log("之卦", changeGua)
 
         let currentUrl = window.location.href;
+        currentUrl = currentUrl.split('&gua=')[0]
         console.log(currentUrl);
         if (currentUrl.includes("?")){
             currentUrl += "&gua=" + changeGua
