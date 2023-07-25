@@ -18,6 +18,30 @@ body {
     padding: 16px
 }
 
+#gua-title {
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    font-size: 60px;
+    color: #105150;
+    cursor: default;
+    transition-duration: .5s
+}
+
+#gua-title #gua-detail {
+    color: #105150;
+    font-size: 18px;
+    transition-duration: .5s
+}
+
+#gua-title:hover {
+    color: #efefef
+}
+
+#gua-title:hover #gua-detail {
+    color: #efefef
+}
+
 #gua {
     width: 300px;
     height: 360px;

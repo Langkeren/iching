@@ -115,6 +115,8 @@ function showGua(predict, change){
         return
     }
 
+    globalInfo.selectedGua = info
+    globalInfo.index = guaInfo.gua.indexOf(info)
     loadGua(predict)
     let result = "<p>本卦: " + guaData[predict] + " 卦";
     if (change != null){
@@ -182,6 +184,7 @@ function getExplainList(explains){
 
 const globalInfo = {
     gua: guaInfo.gua,
+    index: 0,
     selectedGua: null
 };
 function loadGua(guaXiang) {
@@ -193,4 +196,10 @@ function loadGua(guaXiang) {
             yao.addClass('yin', 1000).removeClass('yang');
         }
     }
+
+    const name = globalInfo.selectedGua['gua-name'];
+    $('#back-title').text(name);
+    $('#gua-number').text(globalInfo.index + 1);
+    $('#gua-name').text(getGuaName(guaXiang, name));
+    $('#gua-detail').text(globalInfo.selectedGua['gua-detail']);
 }
