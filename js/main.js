@@ -109,13 +109,15 @@ function start(){
 function showGua(predict, change){
     const info = guaInfo.gua.filter(e => e['gua-xiang'] === predict)[0]
     console.log('当前卦象', predict, info)
+    if (info == null){
+        return
+    }
     let result = "<p>本卦: " + guaData[predict] + " 卦";
     if (change){
         result += ", 变爻为" + (change + 1)  + " 爻</p>"
     }else {
         result += "</p>"
     }
-
     document.getElementById("result").innerHTML = result;
     document.getElementById("info").innerHTML = "<p>" + getGuaName(info["gua-xiang"], info["gua-name"]) + "</p>"
     document.getElementById("guaCi").innerHTML = "卦辞：<p>" + info['gua-detail'] + "</p>";
@@ -154,5 +156,3 @@ function getExplainList(explains){
 
     return all
 }
-
-init();
