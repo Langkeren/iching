@@ -203,3 +203,44 @@ function loadGua(guaXiang) {
     $('#gua-name').text(getGuaName(guaXiang, name));
     $('#gua-detail').text(globalInfo.selectedGua['gua-detail']);
 }
+
+$(document).ready(function () {
+    $('.yao').hover(function () {
+        let yaoDetail;
+        if (globalInfo.selectedGua === null) {
+            return;
+        }
+        $('.yao, #back-title').addClass('unhover');
+        $(this).removeClass('unhover');
+
+        const id = 5 - $(this).index();
+        const idStrList = ['初', '二', '三', '四', '五', '上'];
+        const yinYang = globalInfo.selectedGua['gua-xiang'][id] === '1' ? '九' : '六';
+        if (id === 0 || id === 5) {
+            yaoDetail = idStrList[id] + yinYang;
+        } else {
+            yaoDetail = yinYang + idStrList[id];
+        }
+        yaoDetail += '：' + globalInfo.selectedGua['yao-detail'][id];
+        $('#yao-detail').css('top', $(this).offset().top).text(yaoDetail)
+            .show();
+    }, function () {
+        $('.yao, #back-title').removeClass('unhover');
+        $('#yao-detail').hide();
+
+    }).click(function () {
+        if (globalInfo.selectedGua === null) {
+            return;
+        }
+        const id = 5 - $(this).index();
+        let guaXiang = globalInfo.selectedGua['gua-xiang'];
+        let changeBit = guaXiang[id];
+        changeBit = changeBit === '1' ? '0' : '1';
+        guaXiang = guaXiang.substr(0, id) + changeBit + guaXiang.substr(id + 1);
+        loadGua(guaXiang);
+
+        location.hash = guaXiang;
+        $('.yao, #back-title').removeClass('unhover');
+        $('#yao-detail').hide();
+    });
+});
