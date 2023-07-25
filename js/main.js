@@ -185,23 +185,12 @@ const globalInfo = {
     selectedGua: null
 };
 function loadGua(guaXiang) {
-    if (globalInfo.gua !== null) {
-        const len = globalInfo.gua.length;
-        for (let i = 0; i < len; ++i) {
-            if (globalInfo.gua[i]['gua-xiang'] === guaXiang) {
-                globalInfo.selectedGua = globalInfo.gua[i];
-
-                for (let y = 6; y > 0; --y) {
-                    const yao = $('#yao' + y + ' .yinyang');
-                    if (yao.hasClass('yin') && guaXiang[6-y] === '1') {
-                        yao.removeClass('yin', 1000).addClass('yang');
-                    } else if (yao.hasClass('yang') && guaXiang[6-y] === '0') {
-                        yao.addClass('yin', 1000).removeClass('yang');
-                    }
-                }
-
-            }
+    for (let y = 6; y > 0; --y) {
+        const yao = $('#yao' + y + ' .yinyang');
+        if (yao.hasClass('yin') && guaXiang[6-y] === '1') {
+            yao.removeClass('yin', 1000).addClass('yang');
+        } else if (yao.hasClass('yang') && guaXiang[6-y] === '0') {
+            yao.addClass('yin', 1000).removeClass('yang');
         }
     }
-    return false;
 }
