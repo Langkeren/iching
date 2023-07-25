@@ -36,6 +36,7 @@ const EFFECT_MINUTES = 60 * 24 * 3
 const randomKey = "randomKey"
 let randomNumber = (new Date()).getTime();
 function init(){
+    route();
     // 随机数
     const cachedRandom = sessionGet(randomKey);
     if (cachedRandom != null){
@@ -46,6 +47,19 @@ function init(){
     }
 
     console.log("随机数: " + randomNumber)
+
+    //
+}
+
+
+function route(){
+    const queryString = window.location.search;
+    console.log(queryString);
+    const urlParams = new URLSearchParams(queryString);
+    const gua = urlParams.get("gua")
+    if (gua != null){
+        showGua(gua)
+    }
 }
 
 function getIndex(arrays, ...no){
@@ -89,10 +103,20 @@ function start(){
     console.log("变爻, 天卦, 地卦: 位置", change, sky, earth)
     const predict = gua[sky].bit + gua[earth].bit
     console.log(predict)
+    showGua(predict, change)
+}
 
+function showGua(predict, change){
     const info = guaInfo.gua.filter(e => e['gua-xiang'] === predict)[0]
-    console.log(info)
-    document.getElementById("result").innerHTML = "<p>占卦结果: " + guaData[predict] + " 卦, 变爻为" + (change + 1)  + " 爻</p>"
+    console.log('当前卦象', predict, info)
+    let result = "<p>本卦: " + guaData[predict] + " 卦";
+    if (change){
+        result += ", 变爻为" + (change + 1)  + " 爻</p>"
+    }else {
+        result += "</p>"
+    }
+
+    document.getElementById("result").innerHTML = result;
     document.getElementById("info").innerHTML = "<p>" + getGuaName(info["gua-xiang"], info["gua-name"]) + "</p>"
     document.getElementById("guaCi").innerHTML = "卦辞：<p>" + info['gua-detail'] + "</p>";
 
