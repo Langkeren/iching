@@ -102,7 +102,7 @@ function start(){
 
     console.log("变爻, 天卦, 地卦: 位置", change, sky, earth)
     const predict = gua[sky].bit + gua[earth].bit
-    console.log(predict)
+    console.log("本卦, 变爻为: ", predict, change)
     showGua(predict, change)
 }
 
@@ -113,7 +113,7 @@ function showGua(predict, change){
         return
     }
     let result = "<p>本卦: " + guaData[predict] + " 卦";
-    if (change){
+    if (change != null){
         result += ", 变爻为" + (change + 1)  + " 爻。"
 
         // 之卦
@@ -129,6 +129,8 @@ function showGua(predict, change){
             currentUrl += "?gua=" + changeGua
         }
         result += "  之卦: <a href='" +  currentUrl + "' style='color: blueviolet'>" + guaData[changeGua] + "</a> 卦"
+    }else {
+        console.log("没有变爻")
     }
 
     result += "</p>"
