@@ -114,10 +114,24 @@ function showGua(predict, change){
     }
     let result = "<p>本卦: " + guaData[predict] + " 卦";
     if (change){
-        result += ", 变爻为" + (change + 1)  + " 爻</p>"
-    }else {
-        result += "</p>"
+        result += ", 变爻为" + (change + 1)  + " 爻。"
+
+        // 之卦
+        const currentYao = predict.charAt(change)
+        const changeGua = predict.substring(0, change) + (1 - currentYao) + predict.substring(change + 1)
+        console.log("之卦", changeGua)
+
+        let currentUrl = window.location.href;
+        console.log(currentUrl);
+        if (currentUrl.includes("?")){
+            currentUrl += "&gua=" + changeGua
+        }else {
+            currentUrl += "?gua=" + changeGua
+        }
+        result += "  之卦: <a href='" +  currentUrl + "' style='color: blueviolet'>" + guaData[changeGua] + "</a> 卦"
     }
+
+    result += "</p>"
     document.getElementById("result").innerHTML = result;
     document.getElementById("info").innerHTML = "<p>" + getGuaName(info["gua-xiang"], info["gua-name"]) + "</p>"
     document.getElementById("guaCi").innerHTML = "卦辞：<p>" + info['gua-detail'] + "</p>";
