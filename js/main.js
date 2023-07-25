@@ -1,3 +1,5 @@
+// noinspection JSUnresolvedReference
+
 const guaData = {'111111':'乾','011111':'夬','000000':'坤','010001':'屯','100010':'蒙','010111':'需','111010':'讼','000010': '师',
     '010000':'比','110111':'小畜','111011':'履','000111':'泰','111000':'否','111101':'同人','101111':'大有','000100':'谦',
     '001000':'豫','011001':'随','100110':'蛊','000011':'临','110000':'观','101001':'噬嗑','100101':'贲','100000':'剥',
@@ -112,6 +114,8 @@ function showGua(predict, change){
     if (info == null){
         return
     }
+
+    loadGua(predict)
     let result = "<p>本卦: " + guaData[predict] + " 卦";
     if (change != null){
         result += ", 变爻为" + (change + 1)  + " 爻。"
@@ -172,4 +176,32 @@ function getExplainList(explains){
     all.push(tmp)
 
     return all
+}
+
+
+
+const globalInfo = {
+    gua: guaInfo.gua,
+    selectedGua: null
+};
+function loadGua(guaXiang) {
+    if (globalInfo.gua !== null) {
+        const len = globalInfo.gua.length;
+        for (let i = 0; i < len; ++i) {
+            if (globalInfo.gua[i]['gua-xiang'] === guaXiang) {
+                globalInfo.selectedGua = globalInfo.gua[i];
+
+                for (let y = 6; y > 0; --y) {
+                    const yao = $('#yao' + y + ' .yinyang');
+                    if (yao.hasClass('yin') && guaXiang[6-y] === '1') {
+                        yao.removeClass('yin', 1000).addClass('yang');
+                    } else if (yao.hasClass('yang') && guaXiang[6-y] === '0') {
+                        yao.addClass('yin', 1000).removeClass('yang');
+                    }
+                }
+
+            }
+        }
+    }
+    return false;
 }
