@@ -1,4 +1,4 @@
-// noinspection JSUnresolvedReference
+// noinspection JSUnresolvedReference,JSCheckFunctionSignatures
 
 const guaData = {'111111':'乾','011111':'夬','000000':'坤','010001':'屯','100010':'蒙','010111':'需','111010':'讼','000010': '师',
     '010000':'比','110111':'小畜','111011':'履','000111':'泰','111000':'否','111101':'同人','101111':'大有','000100':'谦',
@@ -243,4 +243,10 @@ $(document).ready(function () {
         $('.yao, #back-title').removeClass('unhover');
         $('#yao-detail').hide();
     });
+
+
+    $('#show-detail').click(function (){
+        console.log('详细')
+        $('#show-detail').css("visibility", "visible")
+    })
 });
