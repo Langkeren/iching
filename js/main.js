@@ -266,12 +266,16 @@ $(document).ready(function () {
     $('#show-detail').click(function (){
         showDetail = !showDetail
         if (showDetail){
-            $('#show-detail').text("收起详解")
+            // $('#show-detail').text("收起详解")
+            $('.up-arrow').css("display", "block")
+            $('.down-arrow').css("display", "none")
             $('#result').css("display", "block")
             $('#changeGua').css("display", "block")
             $('#explains-all').css("display", "block")
         }else {
-            $('#show-detail').text("详解")
+            // $('#show-detail').text("详解")
+            $('.up-arrow').css("display", "none")
+            $('.down-arrow').css("display", "block")
             $('#result').css("display", "none")
             $('#changeGua').css("display", "none")
             $('#explains-all').css("display", "none")

@@ -154,6 +154,21 @@ body {
     width: 100%;
     margin-top: 436px;
 }
+
+.up-arrow{
+    display: none;
+    border: 15px solid;
+    border-color: transparent transparent  #959595 transparent;
+    width: 15px;
+    height:15px;
+}
+
+.down-arrow{
+    border: 15px solid;
+    border-color: #959595 transparent transparent transparent;
+    width: 15px;
+    height:15px;
+}
 #result{
     display: none;
 }
