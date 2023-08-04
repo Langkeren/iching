@@ -43,9 +43,9 @@ body {
 .cycle{
     border: 2px solid #468e8d;
     text-align: center;
-    vertical-align: middle;
     width: 36px;
     height: 36px;
+    line-height: 32px;
     border-radius: 18px;
     box-shadow: 0 0 2px #268e8d;
     cursor: pointer;
