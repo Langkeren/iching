@@ -61,7 +61,7 @@ body {
 
 #gua .yao {
     height: 40px;
-    background-color: #efefef;
+    background-color: black;
     cursor: pointer;
     transition-duration: 1s
 }
@@ -71,11 +71,11 @@ body {
 }
 
 #gua .yao.unhover {
-    background: #66a09f
+    background: black;
 }
 
 #gua .yao.unhover .yang {
-    background: #66a09f
+    background: black;
 }
 
 #gua .yao .yinyang {
@@ -88,11 +88,11 @@ body {
 }
 
 #gua .yao .yang {
-    background-color: #efefef
+    background-color: black;
 }
 
 #gua .yao .yin {
-    background-color: #468e8d
+    background-color: white;
 }
 
 #yao-detail {
