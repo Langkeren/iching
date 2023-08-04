@@ -16,6 +16,9 @@ body {
     padding: 16px
 }
 
+#tip{
+    margin: 5px;
+}
 #operation-area{
     margin-top: 10px;
     width: 100%;
@@ -49,24 +52,23 @@ body {
 }
 
 .cycle:hover{
-    box-shadow: 0 0 3px #568e8d;
+    box-shadow: 0 0 5px #568e8d;
 }
 
-#detail-area{
-    margin-top: 260px;
-}
-#result{
-    display: none;
-}
-
-#explains-all{
-    display: none;
+#show-detail{
+    position: absolute;
+    right: 16px;
+    bottom: 6px;
+    font-size: 16px;
+    color: #105150;
+    cursor: pointer;
+    transition-duration: .5s
 }
 
 #gua-title {
     position: absolute;
     left: 16px;
-    bottom: 226px;
+    bottom: 16px;
     font-size: 60px;
     color: #105150;
     cursor: default;
@@ -147,9 +149,18 @@ body {
     padding: 4px 0
 }
 
-#explains-all{
-    margin-top: 120px;
-    height: 400px;
+#detail-area{
     width: 100%;
-    z-index: 1000;
+    margin-top: 480px;
+}
+#result{
+    display: none;
+}
+
+#explains-all{
+    display: none;
+}
+
+#explains-all{
+    width: 100%;
 }
