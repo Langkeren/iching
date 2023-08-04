@@ -250,14 +250,14 @@ $(document).ready(function () {
         if (globalInfo.selectedGua === null) {
             return;
         }
-        const id = 5 - $(this).index();
+        const id =  $(this).index();
         let guaXiang = globalInfo.selectedGua['gua-xiang'];
         let changeBit = guaXiang[id];
         changeBit = changeBit === '1' ? '0' : '1';
         guaXiang = guaXiang.substr(0, id) + changeBit + guaXiang.substr(id + 1);
-        loadGua(guaXiang);
-
-        location.hash = guaXiang;
+        // loadGua(guaXiang);
+        showGua(guaXiang, id)
+        // location.hash = guaXiang;
         $('.yao, #back-title').removeClass('unhover');
         $('#yao-detail').hide();
     });
