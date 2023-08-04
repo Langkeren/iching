@@ -16,6 +16,42 @@ body {
     padding: 16px
 }
 
+#operation-area{
+    margin-top: 10px;
+    width: 100%;
+}
+
+#input-numbers{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+}
+#input-numbers input{
+    min-width: 90px;
+}
+
+#operation{
+    margin: 5px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.cycle{
+    border: 2px solid #468e8d;
+    text-align: center;
+    vertical-align: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    box-shadow: 0 0 2px #268e8d;
+    cursor: pointer;
+}
+
+.cycle:hover{
+    box-shadow: 0 0 3px #568e8d;
+}
+
 #detail-area{
     margin-top: 260px;
 }
@@ -49,6 +85,11 @@ body {
 
 #gua-title:hover #gua-detail {
     color: #efefef
+}
+
+#gua-wrapper{
+    display: flex;
+    justify-content: center;
 }
 #gua {
     width: 300px;

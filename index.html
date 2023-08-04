@@ -16,28 +16,31 @@
 </head>
 <body>
 <div id ="container">
-    <div>
-        <label for="num1">数字1：</label><input id="num1" type="number" min="100" max="999"/><br/>
-        <label for="num2">数字2：</label><input id="num2" type="number" min="100" max="999"/><br/>
-        <label for="num3">数字3：</label><input id="num3" type="number" min="100" max="999"/><br/>
+    <div id="operation-area">
+        <div id="input-numbers">
+            <label for="num1"></label><input id="num1" type="number" min="100" max="999" placeholder="天"/>
+            <label for="num2"></label><input id="num2" type="number" min="100" max="999" placeholder="人"/>
+            <label for="num3"></label><input id="num3" type="number" min="100" max="999" placeholder="地"/>
+        </div>
+        <div id="operation" style="padding: 20px;">
+            <div class="cycle" onclick="start()">占</div>
+        </div>
     </div>
-    <div id="operation" style="padding: 20px;">
-        <button onclick="start()">开始占卦</button>
-    </div>
-
 
 
     <div id="gua-title">
         <span id="gua-number"></span>.<span id="gua-name"></span>
         <span id="gua-detail"></span>
     </div>
-    <div id="gua">
-        <div id="yao6" class="yao"><div class="yinyang yang"></div></div>
-        <div id="yao5" class="yao yao-mg"><div class="yinyang yang"></div></div>
-        <div id="yao4" class="yao yao-split"><div class="yinyang yang"></div></div>
-        <div id="yao3" class="yao"><div class="yinyang yang"></div></div>
-        <div id="yao2" class="yao yao-mg"><div class="yinyang yang"></div></div>
-        <div id="yao1" class="yao"><div class="yinyang yang"></div></div>
+    <div id="gua-wrapper">
+        <div id="gua">
+            <div id="yao6" class="yao"><div class="yinyang yang"></div></div>
+            <div id="yao5" class="yao yao-mg"><div class="yinyang yang"></div></div>
+            <div id="yao4" class="yao yao-split"><div class="yinyang yang"></div></div>
+            <div id="yao3" class="yao"><div class="yinyang yang"></div></div>
+            <div id="yao2" class="yao yao-mg"><div class="yinyang yang"></div></div>
+            <div id="yao1" class="yao"><div class="yinyang yang"></div></div>
+        </div>
     </div>
     <div id="yao-detail"></div>
 
