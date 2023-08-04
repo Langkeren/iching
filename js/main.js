@@ -21,10 +21,10 @@ const gua = [
 ]
 
 function getGuaName(guaXiang, guaName) {
-    const name = ['地', '雷', '水', '泽', '山', '火', '风', '天'];
-    const last = parseInt(guaXiang[0]) + parseInt(guaXiang[1]) * 2
+    const name = ['地', '山', '水', '风', '雷', '火', '泽', '天'];
+    const first = parseInt(guaXiang[0]) + parseInt(guaXiang[1]) * 2
         + parseInt(guaXiang[2]) * 4;
-    const first = parseInt(guaXiang[3]) + parseInt(guaXiang[4]) * 2
+    const last = parseInt(guaXiang[3]) + parseInt(guaXiang[4]) * 2
         + parseInt(guaXiang[5]) * 4;
     if (first === last) {
         return guaName + '为' + name[first];
