@@ -34,6 +34,7 @@ body {
 }
 
 #operation{
+    margin-top: 30px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
@@ -93,6 +94,7 @@ body {
     justify-content: center;
 }
 #gua {
+    margin-top: 60px;
     width: 300px;
     height: 360px;
 }
