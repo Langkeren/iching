@@ -204,6 +204,7 @@ function loadGua(guaXiang) {
     $('#gua-detail').text(globalInfo.selectedGua['gua-detail']);
 }
 
+let showDetail = false
 $(document).ready(function () {
     $('.yao').hover(function () {
         let yaoDetail;
@@ -246,7 +247,13 @@ $(document).ready(function () {
 
 
     $('#show-detail').click(function (){
-        console.log('详细')
-        $('#show-detail').css("visibility", "visible")
+        showDetail = !showDetail
+        if (showDetail){
+            $('#show-detail').text("收起详解")
+            $('#explains-all').css("display", "block")
+        }else {
+            $('#show-detail').text("详解")
+            $('#explains-all').css("display", "none")
+        }
     })
 });

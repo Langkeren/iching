@@ -10,18 +10,27 @@ html {
 }
 
 body {
-    background-color: #468e8d;
     width: 100%;
     height: 100%;
-    overflow: hidden;
     font-size: 18px;
     padding: 16px
+}
+
+#detail-area{
+    margin-top: 260px;
+}
+#result{
+    display: none;
+}
+
+#explains-all{
+    display: none;
 }
 
 #gua-title {
     position: absolute;
     left: 16px;
-    bottom: 16px;
+    bottom: 226px;
     font-size: 60px;
     color: #105150;
     cursor: default;
@@ -44,11 +53,6 @@ body {
 #gua {
     width: 300px;
     height: 360px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -180px;
-    margin-left: -150px
 }
 
 #gua .yao-split {
@@ -107,7 +111,4 @@ body {
     height: 400px;
     width: 100%;
     z-index: 1000;
-    visibility: hidden;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
