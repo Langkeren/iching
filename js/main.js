@@ -75,9 +75,12 @@ function getIndex(arrays, ...no){
 }
 
 function toUnicode(str){
-    let code = ''
+    let code = 1
     for (let i = 0; i < str.length; i++){
-        code += str.charCodeAt(i).toString(10)
+        code = i % 2 === 0 ? code & str.charCodeAt(i).toString(10) :
+            code | str.charCodeAt(i).toString(10);
+
+        code = code % 1000
     }
     return code;
 }
@@ -92,8 +95,8 @@ function start(){
             inputNumber[i] = ram
         }
         // 不是数字
-        if (isNaN(inStr) || isNaN(parseFloat(inStr))){
-            inputNumber[i] = toUnicode(inStr)
+        if (isNaN(inputNumber[i]) || isNaN(parseFloat(inputNumber[i]))){
+            inputNumber[i] = toUnicode(inputNumber[i])
             console.log("第" + (i+1) + "个输入不是数字, 转为unionCode", inStr, inputNumber[i])
         }
     }
