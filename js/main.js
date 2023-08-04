@@ -73,14 +73,28 @@ function getIndex(arrays, ...no){
         return i
     }
 }
+
+function toUnicode(str){
+    let code = ''
+    for (let i = 0; i < str.length; i++){
+        code += str.charCodeAt(i).toString(10)
+    }
+    return code;
+}
 function start(){
     const inputNumber = [document.getElementById("num1").value, document.getElementById("num2").value, document.getElementById("num3").value]
     console.log("用户输入", inputNumber);
     for (let i = 0; i < inputNumber.length; i++){
-        if (!inputNumber[i]){
+        const inStr = inputNumber[i]
+        if (!inStr){
             const ram = Math.random()
             console.log("第" + (i+1) + "个数字缺失, 赋值随机数: " + ram)
             inputNumber[i] = ram
+        }
+        // 不是数字
+        if (isNaN(inStr) || isNaN(parseFloat(inStr))){
+            inputNumber[i] = toUnicode(inStr)
+            console.log("第" + (i+1) + "个输入不是数字, 转为unionCode", inStr, inputNumber[i])
         }
     }
     const num1 = inputNumber[0] * randomNumber;
